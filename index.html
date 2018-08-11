@@ -524,12 +524,24 @@
                 
               
 
-              <time title="创建时间：2018-08-10 19:48:42 / 修改时间：20:34:59" itemprop="dateCreated datePublished" datetime="2018-08-10T19:48:42+08:00">2018-08-10</time>
+              <time title="创建时间：2018-08-10 19:48:42" itemprop="dateCreated datePublished" datetime="2018-08-10T19:48:42+08:00">2018-08-10</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-08-11 18:20:03" itemprop="dateModified" datetime="2018-08-11T18:20:03+08:00">2018-08-11</time>
               
             
           </span>
@@ -567,17 +579,23 @@
             <!DOCTYPE html>
 <html>
  <head>
-  <title> js测试 </title>
-  <meta http-equiv="Content-Type" content="text/html; charset=gbk">
-  <script type="text/javascript">
+  <title> new document </title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">   
+  <script type="text/javascript">  
     function openWindow(){
+
     var a = confirm("是否打开网站？");
     // 新窗口打开时弹出确认框，是否打开
     if(a === true){
          var location = prompt("打开的网址为：");
     // 通过输入对话框，确定打开的网址，默认为 http：//www.imooc.com/
-        window.open('location','_blank','width=400,height=500,menubar=no,toolbar=no');
+    if(location == true){
+        window.open('location','_blank','width=400,height=500,menubar=no,toolbar=no');}
     //打开的窗口要求，宽400像素，高500像素，无菜单栏、无工具栏。
+    else
+    {
+        alert("不打开你皮nm呢");
+    }
     }
     else{
         alert("我可去你妈了个大傻逼的吧");
