@@ -108,18 +108,18 @@
 
 
 
-  <meta name="description" content="代码`&amp;lt;!DOCTYPE html&amp;gt;     new document         function openWindow(){    var a = confirm(“是否打开网站？”);    // 新窗口打开时弹出确认框，是否打开    if(a === true){         var location = prompt(“打开的网址为：”);    // 通过输入对话">
+  <meta name="description" content="代码`&amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt;  &amp;lt;head&amp;gt;   &amp;lt;title&amp;gt; new document &amp;lt;/title&amp;gt;   &amp;lt;meta http-equiv=&amp;quot;Content-Type&amp;quot; content=&amp;quot;text/html; charset=utf-8&amp;quot;/&amp;gt;   &amp;lt;s">
 <meta name="keywords" content="学习">
 <meta property="og:type" content="article">
 <meta property="og:title" content="2018-8-12-jstest">
 <meta property="og:url" content="https://pengfei-cn.github.io/2018/08/12/js测试/index.html">
 <meta property="og:site_name" content="PF_ 记">
-<meta property="og:description" content="代码`&amp;lt;!DOCTYPE html&amp;gt;     new document         function openWindow(){    var a = confirm(“是否打开网站？”);    // 新窗口打开时弹出确认框，是否打开    if(a === true){         var location = prompt(“打开的网址为：”);    // 通过输入对话">
+<meta property="og:description" content="代码`&amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt;  &amp;lt;head&amp;gt;   &amp;lt;title&amp;gt; new document &amp;lt;/title&amp;gt;   &amp;lt;meta http-equiv=&amp;quot;Content-Type&amp;quot; content=&amp;quot;text/html; charset=utf-8&amp;quot;/&amp;gt;   &amp;lt;s">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-08-12T08:29:48.915Z">
+<meta property="og:updated_time" content="2018-08-12T08:36:33.915Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="2018-8-12-jstest">
-<meta name="twitter:description" content="代码`&amp;lt;!DOCTYPE html&amp;gt;     new document         function openWindow(){    var a = confirm(“是否打开网站？”);    // 新窗口打开时弹出确认框，是否打开    if(a === true){         var location = prompt(“打开的网址为：”);    // 通过输入对话">
+<meta name="twitter:description" content="代码`&amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html&amp;gt;  &amp;lt;head&amp;gt;   &amp;lt;title&amp;gt; new document &amp;lt;/title&amp;gt;   &amp;lt;meta http-equiv=&amp;quot;Content-Type&amp;quot; content=&amp;quot;text/html; charset=utf-8&amp;quot;/&amp;gt;   &amp;lt;s">
 
 
 
@@ -377,7 +377,7 @@
                 
               
 
-              <time title="创建时间：2018-08-12 00:00:00 / 修改时间：16:29:48" itemprop="dateCreated datePublished" datetime="2018-08-12T00:00:00+08:00">2018-08-12</time>
+              <time title="创建时间：2018-08-12 00:00:00 / 修改时间：16:36:33" itemprop="dateCreated datePublished" datetime="2018-08-12T00:00:00+08:00">2018-08-12</time>
             
 
             
@@ -415,9 +415,37 @@
       
 
       
-        <h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><p>`&lt;!DOCTYPE html&gt;</p>
-<p><html><br> <head><br>  <title> new document </title><br>  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"><br>  <script type="text/javascript"><br>    function openWindow(){<br>    var a = confirm(“是否打开网站？”);<br>    // 新窗口打开时弹出确认框，是否打开<br>    if(a === true){<br>         var location = prompt(“打开的网址为：”);<br>    // 通过输入对话框，确定打开的网址，默认为 http：//<a href="http://www.imooc.com/">www.imooc.com/</a><br>    if(location == true){<br>        window.open(‘location’,’_blank’,’width=400,height=500,menubar=no,toolbar=no’);}<br>    //打开的窗口要求，宽400像素，高500像素，无菜单栏、无工具栏。<br>    else<br>{<br>        alert(“不打开你皮nm呢”);<br>    }<br>    }<br>    else{<br>        alert(“我可去你妈了个大傻逼的吧”);<br>    }<br>    }<br>  </script><br> </head><br> <body><br>      <input type="button" value="新窗口打开网站" onclick="openWindow()"><br> </body><br></html>`</p>
-
+        <h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><pre><code>`&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+ &lt;head&gt;
+  &lt;title&gt; new document &lt;/title&gt;
+  &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot;/&gt;
+  &lt;script type=&quot;text/javascript&quot;&gt;
+    function openWindow(){
+    var a = confirm(&quot;是否打开网站？&quot;);
+    // 新窗口打开时弹出确认框，是否打开
+    if(a === true){
+         var location = prompt(&quot;打开的网址为：&quot;);
+    // 通过输入对话框，确定打开的网址，默认为 http：//www.imooc.com/
+    if(location == true){
+        window.open(&apos;location&apos;,&apos;_blank&apos;,&apos;width=400,height=500,menubar=no,toolbar=no&apos;);}
+    //打开的窗口要求，宽400像素，高500像素，无菜单栏、无工具栏。
+    else
+{
+        alert(&quot;不打开你皮nm呢&quot;);
+    }
+    }
+    else{
+        alert(&quot;我可去你妈了个大傻逼的吧&quot;);
+    }
+    }
+  &lt;/script&gt;
+ &lt;/head&gt;
+ &lt;body&gt;
+      &lt;input type=&quot;button&quot; value=&quot;新窗口打开网站&quot; onclick=&quot;openWindow()&quot; /&gt;
+ &lt;/body&gt;
+&lt;/html&gt;`
+</code></pre>
       
     </div>
 
@@ -450,8 +478,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/githubPENGFEI-CN.github.io/2018/08/12/js测试1/" rel="next" title="2018-8-12-jstest">
-                <i class="fa fa-chevron-left"></i> 2018-8-12-jstest
+              <a href="/githubPENGFEI-CN.github.io/2018/08/10/2018-8-10-1/" rel="next" title="2018-8-10">
+                <i class="fa fa-chevron-left"></i> 2018-8-10
               </a>
             
           </div>
@@ -459,6 +487,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/githubPENGFEI-CN.github.io/2018/08/12/js测试1/" rel="prev" title="2018-8-12-jstest">
+                2018-8-12-jstest <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
