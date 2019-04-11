@@ -1834,7 +1834,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #1b1ac4;
+  background: #3cffff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2958,6 +2958,5 @@ body {
   background-image: url("https://pengfei-cn.github.io/githubPENGFEI-CN.github.io/images/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
   background-position: center center;
 }
