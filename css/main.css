@@ -1834,7 +1834,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #18ff8b;
+  background: #ff2088;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2954,11 +2954,12 @@ ul.breadcrumb li+li:last-child {
     text-align: justify;
   }
 }
-body {
-  background-image: url("https://pengfei-cn.github.io/githubPENGFEI-CN.github.io/images/background.jpg");
-  background-repeat: no-repeat;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-  background-size: cover;
-}
+/* body {
+    background-image:url("https://pengfei-cn.github.io/githubPENGFEI-CN.github.io/images/background.jpg");
+    background-repeat: no-repeat;
+	height:100%;
+	width:100%;
+	overflow: hidden;
+	background-size:cover;
+
+}*/
