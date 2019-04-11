@@ -109,7 +109,7 @@
 
 
   <meta name="description" content="晴 日记 离考试还有，一天。死亡笔记，L和月继续做朋友该多好啊。很无聊吧，夜神。 操作系统  死锁的解决作业调度算法页面替换算法组链接今日份图片">
-<meta name="keywords" content="考试">
+<meta name="keywords" content="测试">
 <meta property="og:type" content="article">
 <meta property="og:title" content="2018.7.7">
 <meta property="og:url" content="https://pengfei-cn.github.io/2018/07/07/2018-7-7/index.html">
@@ -117,7 +117,7 @@
 <meta property="og:description" content="晴 日记 离考试还有，一天。死亡笔记，L和月继续做朋友该多好啊。很无聊吧，夜神。 操作系统  死锁的解决作业调度算法页面替换算法组链接今日份图片">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://raw.githubusercontent.com/PENGFEI-CN/githubPENGFEI-CN.github.io/master/images/04.jpg">
-<meta property="og:updated_time" content="2019-04-11T06:50:55.062Z">
+<meta property="og:updated_time" content="2019-04-11T07:54:37.145Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="2018.7.7">
 <meta name="twitter:description" content="晴 日记 离考试还有，一天。死亡笔记，L和月继续做朋友该多好啊。很无聊吧，夜神。 操作系统  死锁的解决作业调度算法页面替换算法组链接今日份图片">
@@ -189,7 +189,9 @@
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
-
+<div class="bg_content">
+  <canvas id="canvas"></canvas>
+</div>
   
   
     
@@ -388,7 +390,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-04-11 14:50:55" itemprop="dateModified" datetime="2019-04-11T14:50:55+08:00">2019-04-11</time>
+                <time title="修改时间：2019-04-11 15:54:37" itemprop="dateModified" datetime="2019-04-11T15:54:37+08:00">2019-04-11</time>
               
             
           </span>
@@ -420,6 +422,14 @@
           
           
 
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon"
+            >
+            <i class="fa fa-eye"></i>
+             阅读次数： 
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
           
 
           
@@ -466,7 +476,7 @@
       
         <div class="post-tags">
           
-            <a href="/githubPENGFEI-CN.github.io/tags/考试/" rel="tag"># 考试</a>
+            <a href="/githubPENGFEI-CN.github.io/tags/测试/" rel="tag"># 测试</a>
           
         </div>
       
@@ -479,7 +489,7 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/githubPENGFEI-CN.github.io/2018/07/05/flex/" rel="next" title="关于网页">
+              <a href="/githubPENGFEI-CN.github.io/2018/07/05/lianxi1/" rel="next" title="关于网页">
                 <i class="fa fa-chevron-left"></i> 关于网页
               </a>
             
@@ -489,7 +499,7 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/githubPENGFEI-CN.github.io/2018/07/08/2018-8-10/" rel="prev" title="2018.7.8">
+              <a href="/githubPENGFEI-CN.github.io/2018/07/08/2018-7-8/" rel="prev" title="2018.7.8">
                 2018.7.8 <i class="fa fa-chevron-right"></i>
               </a>
             
@@ -624,13 +634,7 @@
                     
                       
                     
-                      
-                    
-                      
-                    
-                      
-                    
-                    <span class="site-state-item-count">9</span>
+                    <span class="site-state-item-count">8</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -718,6 +722,24 @@
 
 
         
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv" title="总访客量">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
+  
+
+  
+    <span class="site-pv" title="总访问量">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+    </span>
+  
+</div>
+
 
 
 
@@ -762,6 +784,8 @@
 
 
 
+  
+
 
 
 
@@ -787,6 +811,11 @@
   
   
     <script type="text/javascript" src="/githubPENGFEI-CN.github.io/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/githubPENGFEI-CN.github.io/lib/canvas-nest/canvas-nest.min.js"></script>
   
 
 
@@ -871,6 +900,21 @@
   
 
   
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
 
   
 
@@ -889,4 +933,5 @@
 
 
 </body>
+<script type="text/javascript" src="/js/src/dynamic_bg.js"></script>
 </html>
